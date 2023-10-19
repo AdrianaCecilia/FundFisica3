@@ -1,0 +1,30 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{RowBox[{"(*"," ",RowBox[{"Defina"," ","as"," ","vari\[AAcute]veis"," ","e"," ","as"," ","constantes"}]," ","*)"}],"\n",RowBox[
+{RowBox[{RowBox[{"Q"," ","="," ","1.0"}],";"}],"   ",RowBox[{"(*"," ",RowBox[{"Substitua"," ","pelo"," ","valor"," ","apropriado"," ","da"," ","carga"," ","Q"}]," ","*)"}],"\n",RowBox[
+{RowBox[{"R"," ","="," ","1.0"}],";"}],"   ",RowBox[{"(*"," ",RowBox[{"Substitua"," ","pelo"," ","valor"," ","apropriado"," ","do"," ","raio"," ","R"}]," ","*)"}],"\n",RowBox[
+{RowBox[{"\[CurlyEpsilon]\:2080"," ","="," ","0.07957747154594767"}],";"}],"   ",RowBox[
+{"(*"," ",RowBox[{"Valor"," ","da"," ","permissividade"," ","el\[EAcute]trica"," ","no"," ","v\[AAcute]cuo"}]," ","*)"}],"\n","\n",RowBox[
+{"(*"," ",RowBox[{"Defina"," ","a"," ","express\[ATilde]o"," ","do"," ","campo"," ","el\[EAcute]trico"," ","E",RowBox[
+{"(","z",")"}]}]," ","*)"}],"\n",RowBox[{RowBox[{"Ez","[","z_","]"}]," ","="," ",RowBox[
+{RowBox[{"(",RowBox[{"1"," ","/"," ",RowBox[{"(",RowBox[{"4"," ","\[Pi]"," ","\[CurlyEpsilon]\:2080"}],")"}]}],")"}]," ","*"," ",RowBox[
+{"(",RowBox[{RowBox[{"(",RowBox[{"Q"," ","z"}],")"}],"/",RowBox[{"(",RowBox[{RowBox[
+{"(",RowBox[{RowBox[{"z","^","2"}]," ","+"," ",RowBox[{"R","^","2"}]}],")"}],"^",RowBox[
+{"(",RowBox[{"3","/","2"}],")"}]}],")"}]}],")"}]}]}],"\n","\n",RowBox[{"(*"," ",RowBox[
+{"Calcule"," ","a"," ","integral"," ","de"," ","E",RowBox[{"(","z",")"}]," ","em"," ","rela\[CCedilla]\[ATilde]o"," ","a"," ","z"}]," ","*)"}],"\n",RowBox[
+{"integral"," ","="," ",RowBox[{"Integrate","[",RowBox[{RowBox[{"Ez","[","z","]"}],","," ","z"}],"]"}]}],"\n","\n",RowBox[
+{"(*"," ",RowBox[{"Mostre"," ","a"," ","express\[ATilde]o"," ","da"," ","integral"}]," ","*)"}],"\n",RowBox[
+{"print",RowBox[{"(","integral",")"}]}],"\n"}]}]],"Input",CellLabel -> "In[14]:= ",
+ExpressionUUID -> "26d76960-fbbc-4d24-bce9-f669e5149d7f"],Cell[
+BoxData[FractionBox[
+RowBox[{"1.`"," ","z"}],SuperscriptBox[RowBox[{"(",RowBox[{RowBox[{"1.`","\[VeryThinSpace]"}],"+",SuperscriptBox[
+"z","2"]}],")"}],RowBox[{"3","/","2"}]]],StandardForm],"Output",CellLabel -> "Out[17]= ",
+ExpressionUUID -> "bd73eb55-bfc0-40dd-830b-3ef866906ee4"],Cell[
+BoxData[RowBox[{"-",FractionBox[
+"1.`",SqrtBox[RowBox[{RowBox[{"1.`","\[VeryThinSpace]"}],"+",SuperscriptBox["z","2"]}]]]}],
+StandardForm],"Output",CellLabel -> "Out[18]= ",ExpressionUUID -> "e002d67b-9cdc-4390-aa5b-269efcc0337d"],Cell[
+BoxData[
+RowBox[{"-",FractionBox[RowBox[{"1.`"," ","print"}],SqrtBox[RowBox[{RowBox[{"1.`","\[VeryThinSpace]"}],"+",SuperscriptBox[
+"z","2"]}]]]}],StandardForm],"Output",CellLabel -> "Out[19]= ",ExpressionUUID -> "5d5386e0-e614-4ad3-a0f9-d34a42a5d80d"]},
+Open],ExpressionUUID -> "ea31732a-967c-4405-a25b-94f48ff6accf"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.3 for Wolfram Cloud 1.67 (October 4, 2023)"]

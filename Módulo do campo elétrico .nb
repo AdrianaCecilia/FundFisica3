@@ -1,0 +1,34 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{RowBox[{RowBox[{"\[Lambda]\:2080"," ","="," ","1.0"}],";"}],"   ",RowBox[
+{"(*"," ",RowBox[{"Substitua"," ","pelo"," ","valor"," ","apropriado"," ","de"," ","lambda_","0"}]," ","*)"}],"\n",RowBox[
+{RowBox[{"\[CurlyEpsilon]\:2080"," ","="," ","8.854187817*^-12"}],";"}],"   ",RowBox[
+{"(*"," ",RowBox[{"Valor"," ","da"," ","permissividade"," ","el\[EAcute]trica"," ","no"," ","v\[AAcute]cuo"}]," ","*)"}],"\n","\n",RowBox[
+{RowBox[{"data"," ","="," ",RowBox[{"{","}"}]}],";"}],"  ",RowBox[{"(*"," ",RowBox[
+{"Crie"," ","uma"," ","lista"," ","para"," ","armazenar"," ","os"," ","resultados"}]," ","*)"}],"\n","\n",RowBox[
+{"For","[",RowBox[{RowBox[{"\[Rho]"," ","="," ","1.0"}],","," ",RowBox[{"\[Rho]"," ","\[LessEqual]"," ","10.0"}],","," ",RowBox[
+{"\[Rho]"," ","+="," ","1.0"}],",","\n","  ",RowBox[{RowBox[{"E\[Rho]"," ","="," ",RowBox[
+{RowBox[{"(",RowBox[{"1"," ","/"," ",RowBox[{"(",RowBox[{"2"," ","*"," ","\[Pi]"," ","*"," ","\[CurlyEpsilon]\:2080"}],")"}]}],")"}]," ","*"," ",RowBox[
+{"(",RowBox[{"\[Lambda]\:2080"," ","/"," ","\[Rho]"}],")"}]," ","*"," ","1"}]}],";","  ",RowBox[
+{"(*"," ",RowBox[{"Calcule"," ","o"," ","m\[OAcute]dulo"," ","do"," ","campo"," ","el\[EAcute]trico"," ","E",RowBox[
+{"(","\[Rho]",")"}]," ","\[Times]"," ","\[Rho]"}]," ","*)"}],"\n","  ",RowBox[{"AppendTo","[",RowBox[
+{"data",","," ",RowBox[{"{",RowBox[{"\[Rho]",","," ","E\[Rho]"}],"}"}]}],"]"}],";"}]}],"  ",RowBox[
+{"(*"," ",RowBox[{"Adicione"," ","o"," ","par"," ",RowBox[{"{",RowBox[{"\[Rho]",","," ","E\[Rho]"}],"}"}]," ","\[AGrave]"," ","lista"," ","de"," ","dados"}]," ","*)"}],"\n","]"}],"\n","\n",RowBox[
+{"ListLinePlot","[",RowBox[{"data",","," ",RowBox[{"AxesLabel"," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{"\"\[Rho]\"",","," ","\"E(\[Rho]) \[Times] \[Rho]\""}],"}"}]}],","," ",RowBox[
+{"PlotRange"," ","\[Rule]"," ","All"}]}],"]"}],"\n"}]],"Input",CellLabel -> "In[33]:= ",
+ExpressionUUID -> "f3c8cae8-0e40-4570-b5ab-d75af4396856"],Cell[
+BoxData[GraphicsBox[
+{{},{{{},{},TagBox[{Hue[0.67`,0.6`,0.6`],Directive[PointSize[NCache[Rational[7,360],
+0.019444444444444445`]],RGBColor[0.368417`,0.506779`,0.709798`],AbsoluteThickness[
+2]],LineBox[CompressedData["1:eJxTTMoPSmViYGDgAmIQDQEf7Hf+jnecuVfACSrgAOEzQPkcDj6/6tcoBn1zhPAFoPIfoHwRh/74NNOvJ15B+RJQ9c+gfBmHHxtzd1xWfAzlK0D1P4DylRwEFq+acP3QXShfBWreLUcAhasx/Q=="]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{DisplayFunction -> Identity,DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {FormBox[
+TagBox["\"\[Rho]\"",HoldForm],TraditionalForm],FormBox[TagBox["\"E(\[Rho]) \[Times] \[Rho]\"",
+HoldForm],TraditionalForm]},AxesOrigin -> {0.8125000000000021`,0},RuleDelayed[DisplayFunction,
+Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],Method -> CompressedData["1:eJzNlmtMFFcUgAe1PoqKghqV1JTQRm1S1JBo+sdbBF2xPLYMmPhIdNi9A1eGueu5M4XFfz6S1tTEVGJbND5IrClafigaNfLH+Kr+sCbiA5SHD5CoUWLT/qm2587KsiwLap0f3mTvnrl3znfPPedkzkkp5gX6WEVRxAiccpiw9GG9TwW2QdV4FDIqmfBqfj8zS/Q4uTsSJ9WnGdQPGybVezqqqkmU2iQUsqiu2Ya1iNumX4OgagUNKsZInm3xcs1iviil6X1KHtACpcwnsk2LguazGDf14UOYOQqF5RQEvgfpzngebVIiCoXIKsvltqBeLphDHRZJdYRCsKn4AIUlmiFojIMW6zr1WWJIg+Q9l7KSUgN/Vshrg7wpTwL0BmdyPWpzfCTGy5n5DixpUhbwgMFMKvrfO4ardKBU51CeaYPgkMv9NOycGNyAofloOTWtIbnS9EpVui3DMGLsBVX5mMfN6CMm9GVGLhWlTiqFHDFRwooFN2yLOv5RWRVlIwfePgLhNbgVQiQMNNbxEgMMMPuGhkI8WjI8izK5wQECO3948En1DQLzdnb/+O2CdgIXNv/0Vd3xTjLQoEJM4TJ0togIx+v4OWdXdbWlPSbwcsOz5gPb7hE4WlM/81TaGZf4SufKBuVJBwH7t8b8opROAtO2N7a+6LnoEv/asb8WFm15QuD2nL2Hp9bfJDDLE1e79vwll/gHNm6tW9ONbu/Z/fnHDTNaCbCtysGK9W75v+DYnRFtDQ8J7M7/6FD1nhYCz6Z998fo+adc4u9IXnx9+jLMn/rinl1nLmF8991JOaeM6XaHzyQEFGc8JEz+uWP36RWb/i46eZ9AWc9s5Xw6xjV1yrzHc3+555JfaPKJ4fayu5iXMyb/W3EWBeXVcIe/tKMKSxXmZUhoIq/qxGWX7P/si0+zEg/eIvBl059fexrae/mPXOLz+P3j1qU8JVCa+U/XxvuYN81NV8Y2XzjiEv97ZX3GyR1dBI4/f3Gtsvs6gZz5easvT213iV/rTU9tfnqVgOP+DvzulNz+vXFWZcsb8sMf8nHyIOwfmPmWPYlscwo0s4QOplfzsxy/RusloZAfsFg5VhZZOnI1KMNWY7ByKF/PNn2G7afhyo2nqR/iOhZTwCKp0ujK2K/Ov75TekuTpsijOQe8tWZRUci5IbW5OXQbkOCEVGBtDy6xzVATFtcb2PBKf0J4P9uPF2VWsG/fq0FE96Ki2c7Hypn+j16M3EhyLhpg1L9cM2z6vlr9H/BsFJY="],PlotRange -> {{0.8125000000000021`,10.`},{0,1.7975103575995823`*^10}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic}}],
+StandardForm],"Output",CellLabel -> "Out[37]= ",ExpressionUUID -> "a294d612-cf86-4f26-bef6-b7a120542d04"]},
+Open],ExpressionUUID -> "3c0d9216-b690-4fc6-9490-878607fbc59f"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.3 for Wolfram Cloud 1.67 (October 4, 2023)"]
